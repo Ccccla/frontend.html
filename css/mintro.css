@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+.mv_page{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+/* 상단 메뉴 */
+.menus{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    z-index: 10;
+    top:50px;
+    display: none;
+}
+.menus > ul {
+    width:auto;
+    height: 50px;
+    text-align: center;
+}
+.menus > ul > li {
+    width: 130px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+.menus > ul > li:hover {
+    background-color: white;
+}
+
+/* 영상 */
+.mp{
+    width: inherit;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+/* 로고 */
+.logo{
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    left: 50%;
+    top: 150px;
+    margin-left: -100px;
+    cursor: pointer;
+}
+.logo:hover{
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    border-bottom: 5px solid black;
+}
+/* 화면 중간 메뉴 적용 css */
+.info{ 
+    position: absolute;
+    width: 150px;
+    height: auto;
+    z-index: 2;
+    top: 300px;
+    left: 50%;
+    margin-left: -75px;
+    color: white;
+}
+.info > ul {
+    width: 100%;
+    height: auto;
+}
+.info > ul >li {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+.info > ul >li:hover {
+    border-bottom: 2px solid black;
+}
+.info > ul >li:nth-child(1) {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+.info > ul >li:nth-child(2) {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+.info > ul >li:nth-child(3) {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+/* 입장 버튼 */
+.btn{
+    width: 150px;
+    height: 50px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: black;
+    line-height: 50px;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30%;
+}
+.btn:hover {
+    background-color: brown;
+}
+
+@media screen and (min-height:340px) and (max-height:600px) {
+    .logo{
+        top: 170px;
+    }
+    .info > ul > li{
+        display: none;
+    }
+}

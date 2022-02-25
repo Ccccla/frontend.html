@@ -1,0 +1,60 @@
+@charset "UTF-8";
+.roulette_sec{
+    height: auto;
+}
+.roulette_div{
+    position: relative;
+    width: 1024px;
+    height: 1600px;
+    margin: 0 auto;
+    background: url("../roule/image/roulette_back.png") no-repeat center center;
+}
+.point_ms{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    left:50%;
+    margin-left: -125px;
+    top: 400px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 250px;
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    z-index: 5;
+    display: none;
+}
+.roulette_div > span{
+    position: absolute;
+    width: 785px;
+    height: 785px;
+    bottom: 150px;
+    left:50%;
+    margin-left: -392.5px;
+    background: url("../roule/image/roulette_board.png") no-repeat center center;
+}
+.roulette_ul{
+    position: absolute;
+    width: 250px;
+    height: 520px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    top:41.5%;
+}
+.roulette_ul > li:nth-of-type(1){
+    width: 70px;
+    height: 63px;
+    margin: 0 auto;
+    background: url("../roule/image/roulette_pin.png");
+}
+.roulette_ul > li:nth-of-type(2){
+    position: absolute;
+    width: inherit;
+    height: 250px;
+    bottom: 0;
+    background: url("../roule/image/roulette_btn.png") no-repeat center center;
+    cursor: pointer;
+}

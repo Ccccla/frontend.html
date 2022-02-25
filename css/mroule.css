@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+.roulette_sec{
+    height: auto;
+    position: relative;
+}
+.roulette_div{
+    position: absolute;
+    width: 100%;
+}
+.roulette_div > img{
+    width: 100%;
+    object-fit: cover;
+}
+.gamepan{
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    margin-left: -40%;
+    bottom:7%;
+}
+.gamepan > img{
+    width:100%;
+    object-fit: cover;
+}
+.gamebtn{
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+    cursor: pointer;
+}
+.gamepin{
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+}
+.gameboard{
+    transition: all 5s ease;
+}
+.msg{
+    position: absolute;
+    z-index: 10;
+    background-color: bisque;
+    color: black;
+    font-size: 12px;
+    width: 60%;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 60px;
+    left: 0;
+    right: 0;
+    margin:auto;
+    top: 200px;
+    display: none;
+}

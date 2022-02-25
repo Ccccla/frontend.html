@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.top_pic{
+    position: relative;
+    width: 1220px;
+    height: inherit;
+    margin: 0 auto;
+    background: url("../shop1/top/top_ban.jpg") no-repeat center center;
+}
+.top_pic > span{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 40px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: url("../shop1/top/top_close.gif") no-repeat center center;
+    cursor: pointer;
+}
